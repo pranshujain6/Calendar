@@ -15,7 +15,7 @@ function fun(){
         {
             fday += `<div class="prev-date">${prevMonthLastDate-i+1}</div>`
         }
-        for(let i=1;i<=currMonthLastDate;i++)
+        for(let i= 1;i<=currMonthLastDate;i++)
         {
             if(i==d.getDate())
             {
