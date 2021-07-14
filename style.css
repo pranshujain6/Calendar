@@ -1,0 +1,67 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.prev, .next{
+    cursor: pointer;
+}
+.container{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,1) 100%);
+}
+.calendar{
+    width: 40%;
+    height: 60%;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.5vw;
+}
+.month{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background-color:darkgray;
+    color: darkslategrey;
+    height: 20%;
+}
+.weekdays{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    height: 7vh;
+}
+.days{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1vh;
+    height:65%
+}
+.days div{
+    width : calc(100%/7);
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.prev-date, .next-date{
+    opacity: .5;
+}
+.today{
+    background-color: darkslategrey;
+    color: floralwhite;
+    border-radius: 10px;
+}
